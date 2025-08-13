@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>KP Tranças - Kauany Prado</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background: #fff5f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+
+ header {
+            background: #ff2d87;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+}
+
+header img {
+            max-width: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+section {
+            padding: 1rem;
+            max-width: 900px;
+            margin: auto;
+}
+
+h2 {
+            color: #ff2d87;
+            text-align: center;
+        }
+
+ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+button {
+            background: #ff2d87;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background: #d92672;
+        }
+
+.galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px solid white;
+        }
+
+ .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo.jpg" alt="Logo KP Tranças">
+    <h1>KP Tranças - Kauany Prado</h1>
+    <p>Tranças e penteados com qualidade e estilo</p>
+</header>
+
+<section>
+    <h2>Serviços</h2>
+    <ul>
+        <li>Gipsy braids (M ou G) - R$ 360,00</li>
+        <li>Box braids masculina - R$ 160,00</li>
+        <li>Tiara detalhada - R$ 60,00</li>
+        <li>Big braids com cachos - R$ 250,00</li>
+        <li>Box braids pontas texturizadas - R$ 270,00</li>
+        <li>Goddes braids (M ou G) - R$ 330,00</li>
+        <li>Topo ou Lateral - R$ 35,00</li>
+        <li>Ghana Love - R$ 175,00</li>
+        <li>Tiara - R$ 45,00</li>
+        <li>Big braids - R$ 230,00</li>
+        <li>Long Bob - R$ 260,00</li>
+        <li>Box braids - R$ 300,00</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria">
+        <img src="imagens/tranca1.jpg" alt="Trança 1">
+        <img src="imagens/tranca2.jpg" alt="Trança 2">
+        <img src="imagens/tranca3.jpg" alt="Trança 3">
+        <img src="imagens/tranca4.jpg" alt="Trança 4">
+    </div>
+</section>
+
+<section>
+    <h2>Agende seu horário</h2>
+    <form id="formAgendamento">
+        <label>Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label>Serviço:</label>
+        <select id="servico">
+    <optgroup label="Tranças femininas">
+        <option value="Gipsy braids (M ou G)">Gipsy braids (M ou G)</option>
+        <option value="Big braids com cachos">Big braids com cachos</option>
+        <option value="Box braids pontas texturizadas">Box braids pontas texturizadas</option>
+        <option value="Goddes braids (M ou G)">Goddes braids (M ou G)</option>
+        <option value="Big braids">Big braids</option>
+        <option value="Long Bob">Long Bob</option>
+        <option value="Box braids">Box braids</option>
+    </optgroup>
+    <optgroup label="Tranças masculinas">
+        <option value="Box braids masculina">Box braids masculina</option>
+        <option value="Topo ou Lateral">Topo ou Lateral</option>
+    </optgroup>
+    <optgroup label="Tiara e estilos">
+        <option value="Tiara detalhada">Tiara detalhada</option>
+        <option value="Tiara">Tiara</option>
+        <option value="Ghana Love">Ghana Love</option>
+    </optgroup>
+</select>
+
+
+        <label>Data:</label>
+        <input type="date" id="data" required>
+
+        <label>Horário:</label>
+        <input type="time" id="hora" required>
+
+        <button type="submit">Enviar agendamento via WhatsApp</button>
+    </form>
+</section>
+
+<a href="https://wa.me/5511989653247" class="whatsapp-float" target="_blank">📱</a>
+
+<script>
+    document.getElementById('formAgendamento').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value.trim();
+        const servico = document.getElementById('servico').value;
+        const data = document.getElementById('data').value;
+        const hora = document.getElementById('hora').value;
+
+        const numeroWhatsApp = '5511989653247'; 
+
+
+        const mensagem = `Olá, meu nome é ${nome}. Quero agendar o serviço: ${servico} para o dia ${data} às ${hora}.`;
+        const mensagemCodificada = encodeURIComponent(mensagem);
+
+ 
+        const url = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+
+      
+        alert("Redirecionando para o WhatsApp. Obrigada por agendar!");
+
+      
+        window.location.href = url;
+    });
+</script>
+
+
+</body>
+</html>
