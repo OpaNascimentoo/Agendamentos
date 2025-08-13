@@ -40,8 +40,7 @@ Um site simples e moderno para divulgação de serviços de tranças e penteados
 
 ## 🌐 Publicação
 
-Este projeto está publicado no **GitHub Pages**:
-[🔗 Clique aqui para acessar](https://opanascimentoo.github.io/Agendamentos/)
-
+🔗 **Visualize o projeto online:**  
+[https://opanascimentoo.github.io/Agendamentos/]((https://opanascimentoo.github.io/Agendamentos/)
 
 
