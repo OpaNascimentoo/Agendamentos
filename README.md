@@ -27,9 +27,9 @@ Um site simples e moderno para divulgação de serviços de tranças e penteados
 ## 🔧 Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/OpaNascimentoo/kp-trancas.git
+   git clone https://github.com/OpaNascimentoo/Agendamentos.git
 
 Abra o arquivo index.html no navegador.
 
 🌐 Publicação
-🔗 Visualize o projeto online: https://opanascimentoo.github.io/kp-trancas/
+🔗 Visualize o projeto online: [https://opanascimentoo.github.io/kp-trancas/](https://opanascimentoo.github.io/Agendamentos/)
